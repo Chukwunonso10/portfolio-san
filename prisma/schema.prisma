@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  role      String   @default("ADMIN")
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  company   String?
+  message   String   @db.Text
+  archived  Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Subscriber {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model Experience {
+  id          String   @id @default(uuid())
+  role        String
+  company     String
+  duration    String
+  description String
+  createdAt   DateTime @default(now())
+}
+
+
+model Category {
+  id        String    @id @default(uuid())
+  name      String    @unique
+  slug      String    @unique
+  projects  Project[]
+}
+
+model Project {
+  id             String     @id @default(uuid())
+  title          String
+  slug           String     @unique
+  description    String
+  problem        String     @db.Text
+  solution       String     @db.Text
+  results        String     @db.Text
+  techStack      String[]   // String array (supported in PostgreSQL)
+  image          String
+  githubUrl      String?
+  liveUrl        String?
+  featured       Boolean    @default(false)
+  
+  // Case study sections
+  dataSource     String     @db.Text
+  analysis       String     @db.Text
+  visualizations String     @db.Text
+  outcome        String     @db.Text
+  businessImpact String     @db.Text
+
+  categories     Category[]
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+}
