@@ -9,7 +9,6 @@ export default function Dashboards() {
 
   const kpis = {
     finance: [
-      { name: "Monthly Recurring Revenue", val: "$42.5K", change: "+14% MoM", icon: <DollarSign className="w-5 h-5 text-emerald-500" /> },
       { name: "Customer Acquisition Cost", val: "$150", change: "-8% QoQ", icon: <Users className="w-5 h-5 text-blue-500" /> },
       { name: "LTV to CAC Ratio", val: "4.2x", change: "Healthy", icon: <TrendingUp className="w-5 h-5 text-purple-500" /> },
       { name: "Gross Margin %", val: "78.4%", change: "+1.2% YTD", icon: <Layers className="w-5 h-5 text-orange-500" /> }
@@ -17,8 +16,7 @@ export default function Dashboards() {
     logistics: [
       { name: "On-Time Delivery Rate", val: "94.2%", change: "+2.1% MoM", icon: <Calendar className="w-5 h-5 text-emerald-500" /> },
       { name: "Average Transit Delay", val: "4.5 Hrs", change: "-1.2 Hrs", icon: <RefreshCw className="w-5 h-5 text-blue-500" /> },
-      { name: "Fulfillment Cost / Order", val: "$8.40", change: "-4% MoM", icon: <DollarSign className="w-5 h-5 text-purple-500" /> },
-      { name: "Carrier SLA Compliance", val: "96.8%", change: "+0.5% QoQ", icon: <Users className="w-5 h-5 text-orange-500" /> }
+      
     ]
   };
 

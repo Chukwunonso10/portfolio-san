@@ -74,10 +74,10 @@ export default function About() {
                 Transforming numbers into structural logic.
               </h1>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                My career trajectory began in Civil Engineering, where I spent days managing material coordinates, project budgets, and subcontractor schedules. It was during this time that I discovered my passion lay not in setting bricks, but in tracking the performance indices of those projects.
+                My career trajectory began in veterinary medicine, where I managed over 200 diverse veterinary cases with 90% success rate. It was during this time that I discovered my passion lay not in diagnostic abilities, but in improving client retention rate and overall service delivery through tracking the performance indices of those projects.
               </p>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                I taught myself advanced Excel, leading to complex forecasting structures. Realizing that spreadsheets could not keep pace with large datasets, I mastered SQL and database querying, followed by Python scripting to automate entire ELT schemas. Today, I build production-ready analytics systems connecting raw application transactional records directly to visual BI dashboards.
+              3MTT taught me advanced Excel, leading to complex forecasting structures. Realizing that spreadsheets could not keep pace with large datasets, I mastered SQL and database querying, followed by Python scripting to automate entire ELT schemas. Today, I build production-ready analytics systems connecting raw application transactional records directly to visual BI dashboards.
               </p>
               
               <div className="grid sm:grid-cols-3 gap-4 mt-4">
@@ -107,7 +107,7 @@ export default function About() {
                 My Journey to Data Analytics
               </h2>
               <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-2">
-                Click on the milestones below to explore how I transitioned from construction management to database architectures and statistical modeling.
+                Click on the milestones below to explore how I transitioned from veterinary medicine to data analytics and statistical modeling.
               </p>
             </div>
 
